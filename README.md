@@ -19,5 +19,5 @@ Installation
    php namecheap.php _acme-challenge.mail.example.com Rvj61XDf393e2YC8pCYiq9vgrVkg1JcQWqnKpvdko
 ```   
 
-!!Waring!!! There are a lot of things you can do with the Namecheap API. Therefore it is not 
+!!Warning!!! There are a lot of things you can do with the Namecheap API. Therefore it is not 
 recommended to install the script on your web server unless you want to expose your API key to others.
