@@ -2,16 +2,39 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="" />
+<meta name="google-site-verification" content="xnFKC9F1VmecEOSfp-vZhiqDsFW1DbHo6dTglzgraVs" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="robots" content="index, follow">
-<meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="keywords" content="AutoIt, Crontab, Cron Expression, Expression, Github, Converter, Parser, DateTime, Time, Source">
+<meta name="description" content="Crontab expression parser for Autoit (UDF). Convert Cron expression to DateTime or Seconds">
 <title>PHP-Namecheap-Script-for-Letsencrypt-Challenge</title>
 <link rel="stylesheet" type="text/css" href="github.css">
 </head>
 <body>
-
+<div id="readme" class="Box md js-code-block-container Box--condensed">
+<div class="Box-body p-5">
+<article class="markdown-body entry-content" itemprop="text">
+<h2>PHP Namecheap Script for Letsencrypt Challenge</h2>
+<p>GitHub Repository: <a href="https://seizu.github.io/PHP-Namecheap-Script-for-Letsencrypt-Challenge/" rel="nofollow">https://seizu.github.io/PHP-Namecheap-Script-for-Letsencrypt-Challenge/</a></p>                
+<p>This PHP command line script can be used to add a Letsencrypt "DNS-01 challenge" record to your
+Namecheap DNS. Namcheap API is used to add such TXT record. It can handle multiple domains
+with different Namcheap-APIKEYs. The script expects only two input parameters provided
+by Letsencrypt during the SSL validation process, an ACME-HOST-String and a TOKEN-String.</p>
+<p>More information: <a href="https://letsencrypt.org/docs/challenge-types/" rel="nofollow">https://letsencrypt.org/docs/challenge-types/</a></p>
+<h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<ol>
+<li>Install it on your preferred operating system where PHP 5 (or higher) is installed.</li>
+<li>Copy all script files into YOUR_HOME_DIR.</li>
+<li>PHP extension CURL must be enabled (php.ini).</li>
+<li>Edit your domains, Namecheap API credentials and proxy settings in "namecheap_config.php"!</li>
+<li>Run namecheap.php from the command line. E.g.:</li>
+</ol>
+<pre><code>   php namecheap.php _acme-challenge.mail.example.com Rvj61XDf393e2YC8pCYiq9vgrVkg1JcQWqnKpvdko
+</code></pre>
+<p>!!Waring!!! There are a lot of things you can do with the Namecheap API. Therefore it is not
+recommended to install the script on your web server unless you want to expose your API key to others.</p>
+</article>
+</div></div>
 </body>
 </html>
