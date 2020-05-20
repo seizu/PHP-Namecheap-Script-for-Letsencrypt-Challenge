@@ -59,7 +59,7 @@ class namecheap_letsencrypt
         $obj = $xml->xpath("//*[local-name()='host']");
         foreach ($obj as $key=>$value) {
             // ignore existing TXT _acme-challenge.*
-            if(((string)$value->attributes()->Type) == "TXT" && preg_match('/^_acme-challenge\./',((string)$value->attributes()->Name))) continue;
+            if(((string)$value->attributes()->Type) == "TXT" && preg_match('/^_acme-challenge/',((string)$value->attributes()->Name))) continue;
             
             array_push($this->config['domains'][$this->domain]["dnsdata"],[
             (string)$value->attributes()->Type, 
